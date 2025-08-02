@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api", 
+  baseURL: "https://blog-hub-opvw.onrender.com" || "http://localhost:5000/api", 
 });
 
 // Add token to all requests
