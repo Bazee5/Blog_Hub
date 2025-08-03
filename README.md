@@ -21,6 +21,23 @@ BlogHub is a full-stack MERN application where users can register, log in, creat
 
 ---
 
+📦 Packages Used
+Client (React)
+axios
+react-router-dom
+tailwindcss
+Vite
+
+Server (Node/Express)
+express
+mongoose
+cors
+jsonwebtoken
+dotenv
+bcryptjs
+
+---
+
 ## 📁 Project Structure
 BlogHub/
 ├── Client/ # React frontend (Vite)
