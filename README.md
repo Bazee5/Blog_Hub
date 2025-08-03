@@ -69,7 +69,21 @@ GET /api/blogs/:id – Get a specific blog
 PUT /api/blogs/:id – Update your blog
 DELETE /api/blogs/:id – Delete your blog
 
+---
+ScreenShots
+<img width="173" height="165" alt="Screenshot 2025-08-02 192412" src="https://github.com/user-attachments/assets/9e9e0964-382f-4de3-b3b0-24d796d9559b" />
+<img width="1787" height="897" alt="Screenshot 2025-08-03 061354" src="https://github.com/user-attachments/assets/d325093b-d7ca-429f-8481-1020de933f38" />
+<img width="1769" height="909" alt="Screenshot 2025-08-03 061414" src="https://github.com/user-attachments/assets/088c4e26-172f-4c1f-a121-ae031599a81d" />
 
+---
+
+Author
+Bazee K
+MERN Stack Developer 
+My Linkedin - https://www.linkedin.com/in/bazee-k/
+Contact -9515492665
+
+App Live At https://blog-hub-upz6-deb9z0lxc-bazees-projects.vercel.app/
 
 
 
