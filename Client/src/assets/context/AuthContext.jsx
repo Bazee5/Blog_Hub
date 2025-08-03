@@ -1,6 +1,6 @@
 // JWT management
 import { createContext, useState, useEffect } from "react";
-import axios from "axios";
+import axiosInstance from "../utils/axiosInstance";
 
 export const AuthContext = createContext();
 
@@ -10,9 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get("/api/users/me", {
-        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
-      });
+      const res = await axiosInstance.get("/users/me");
       setUser(res.data);
     } catch {
       setUser(null);
