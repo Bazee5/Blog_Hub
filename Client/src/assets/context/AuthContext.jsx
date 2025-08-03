@@ -10,9 +10,12 @@ export const AuthProvider = ({ children }) => {
 
   const fetchProfile = async () => {
     try {
+      const token = localStorage.getItem("token");
+      console.log("[AuthContext] Token in localStorage:", token);
       const res = await axiosInstance.get("/users/me");
       setUser(res.data);
-    } catch {
+    } catch (err) {
+      console.error("[AuthContext] Error fetching profile:", err);
       setUser(null);
     } finally {
       setIsLoading(false);
@@ -20,6 +23,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    
     fetchProfile();
   }, []);
 
