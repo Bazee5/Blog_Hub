@@ -44,8 +44,15 @@ const Navbar = () => {
                   to="/profile"
                   className="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all duration-200"
                 >
-                  <User className="w-4 h-4" />
-                  <span className="font-medium">{user?.name || "Profile"}</span>
+                  {/* Show avatar with first letter of user's name if available */}
+                  {user?.name ? (
+                    <span className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-2 text-orange-600 font-bold uppercase">
+                      {user.name.charAt(0)}
+                    </span>
+                  ) : (
+                    <User className="w-4 h-4" />
+                  )}
+                  <span className="font-medium">{user?.name ? user.name : "Profile"}</span>
                 </Link>
 
                 <button
@@ -109,8 +116,14 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-all duration-200"
                 >
-                  <User className="w-5 h-5" />
-                  <span className="font-medium">{user?.name || "Profile"}</span>
+                  {user?.name ? (
+                    <span className="w-7 h-7 bg-orange-100 rounded-full flex items-center justify-center mr-2 text-orange-600 font-bold uppercase">
+                      {user.name.charAt(0)}
+                    </span>
+                  ) : (
+                    <User className="w-5 h-5" />
+                  )}
+                  <span className="font-medium">{user?.name ? user.name : "Profile"}</span>
                 </Link>
 
                 <button
