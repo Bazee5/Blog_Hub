@@ -97,8 +97,7 @@ ScreenShots
 Author
 Bazee K
 MERN Stack Developer 
-My Linkedin - https://www.linkedin.com/in/bazee-k/
-Contact -9515492665
+Contact -8807098125
 
 App Live At https://blog-hub-upz6-deb9z0lxc-bazees-projects.vercel.app/
 
